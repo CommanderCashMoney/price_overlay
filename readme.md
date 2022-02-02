@@ -21,7 +21,7 @@ This add-on reads real time prices from https://nwmarketprices.com and displays 
 5. You should see a command window open up press F6 and wait till you see this: ![](readme_images/cmd_window_1.png)
 6. Price overlay is now active and when it sees an inventory item should try to read the name and look up the price
 
-###Usage:
+### Usage:
 
 - Mousing over an item should show the price.
 - While over an item if you press alt+d it should open a browser tab to nwmarketprices.com to show you the details page
@@ -29,7 +29,7 @@ This add-on reads real time prices from https://nwmarketprices.com and displays 
 - Turn it off when you are not actually trying to view prices. Because it's reading the screen it does slightly affect your FPS. My FPS on a plain screen is around 100 and it drops to around 95 with the price overlay running
 
 
-###My to do list:
+### My to do list:
 This is the initial list of things I want to do next. If you think you can help with these let me know. If you have idea for other feature, put them in the #general chat of the discord.
 
 https://github.com/CommanderCashMoney/price_overlay/issues/1
