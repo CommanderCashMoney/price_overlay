@@ -1,0 +1,8 @@
+pywin32~=303
+opencv-python~=4.5.3.56
+numpy~=1.22.1
+mss~=6.1.0
+pynput~=1.7.6
+pytesseract~=0.3.8
+requests~=2.27.1
+PySimpleGUI~=4.56.0
