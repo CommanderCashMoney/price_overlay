@@ -23,7 +23,7 @@ def resource_path(relative_path):
 
 cleaner = re.compile('<.*?>')
 
-# os.putenv("TESSDATA_PREFIX", 'D:\\Dev\\PyDev\\price_overlay\\tesseract\\tessdata')
+# os.putenv("TESSDATA_PREFIX", 'tesseract\\tessdata')
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract'
 # pytesseract.pytesseract.tesseract_cmd = resource_path('tesseract\\tesseract5.exe')
 
