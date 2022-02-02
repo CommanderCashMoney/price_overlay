@@ -5,7 +5,7 @@ This add-on reads real time prices from https://nwmarketprices.com and displays 
 
 **Video Demo**
 
- [![Youtube demo link](![](readme_images/overlay_thumbnail.png))](https://www.youtube.com/watch?v=6FACB2sMQl4)
+[<img src="readme_images/overlay_thumbnail.png">](https://www.youtube.com/watch?v=6FACB2sMQl4)
 
 ### Disclaimer:
 - This is very much a proof of concept and far from polished. There will be bugs and it likely won't work with some screen resolutions yet.
