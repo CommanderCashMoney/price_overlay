@@ -17,7 +17,7 @@ This add-on reads real time prices from https://nwmarketprices.com and displays 
 1. Download Tesseract https://github.com/CommanderCashMoney/price_overlay/blob/master/final/tesseract5.exe
 2. Install at C:\Program Files (x86)\Tesseract-OCR\tesseract and use all the default options. I've tried bundling tesseract into the install with vcpkg and pyinstall, but I'm having issues, if you can help head over to the [discord](https://discord.gg/fAaezEcH) and hit me up.
 3. Download the overlay https://github.com/CommanderCashMoney/price_overlay/blob/master/dist/price_overlay.exe
-4. You are going to get all kinds of warnings because this is an exe file and not digitally signed etc. If this make you uncomfortable, you can copy and run it directly or package it up yourself. Or wait till I can put this in a cleaner msi package.
+4. You are going to get all kinds of warnings because this is an exe file and not digitally signed etc. If this makes you uncomfortable, you can copy the code and run it directly or package it up yourself. Or wait till I can put this in a cleaner msi package.
 5. Run the price_overlay.exe, it may take 5-10 seconds to run the first time. 
 6. You should see a command window open up press F6 and wait till you see this: ![](readme_images/cmd_window_1.png)
 7. Price overlay is now active and when it sees an inventory item should try to read the name and look up the price
@@ -35,4 +35,7 @@ This is the initial list of things I want to do next. If you think you can help 
 
 https://github.com/CommanderCashMoney/price_overlay/issues/1
 
-### 
+### Notes:
+If you want to build it yourself I've included the spec file I used. As you can see it's hard coding the tesseract path because I had problems with vcpkg, it was only pulling Tesseract version 4.1 and it's much less accurate with that version.
+
+
