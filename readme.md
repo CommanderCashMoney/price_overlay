@@ -27,6 +27,7 @@ This add-on reads real time prices from https://nwmarketprices.com and displays 
 8. Once you see the window, press F6 and wait till you see this:
 
 ![](readme_images/cmd_window_1.png)
+
 10. Price overlay is now active and when it sees an inventory item should try to read the name and look up the price
 
 ### Usage:
