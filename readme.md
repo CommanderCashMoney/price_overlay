@@ -31,7 +31,7 @@ This add-on reads real time prices from https://nwmarketprices.com and displays 
 
 
 ### My to do list:
-This is the initial list of things I want to do next. If you think you can help with these let me know. If you have idea for other feature, put them in the #general chat of the discord.
+This is the initial list of things I want to do next. If you think you can help with these let me know. If you have ideas for other features, put them in the #general chat of the discord.
 
 https://github.com/CommanderCashMoney/price_overlay/issues/1
 
