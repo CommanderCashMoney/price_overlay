@@ -1,11 +1,21 @@
 # -*- mode: python ; coding: utf-8 -*-
 added_files = [
 
-("actions.png", ".")
+("actions.png", "."),
+("gif.dll", "tesseract"),
+("jpeg62.dll", "tesseract"),
+("leptonica-1.81.1.dll", "tesseract"),
+("liblzma.dll", "tesseract"),
+("libpng16.dll", "tesseract"),
+("libwebpmux.dll", "tesseract"),
+("tiff.dll", "tesseract"),
+("webp.dll", "tesseract"),
+("zlib1.dll", "tesseract"),
+("tesseract/tessdata", "tesseract/tessdata"),
 
 ]
 added_binaries = [
-('final\\tesseract5.exe', 'tesseract')
+('tesseract.exe', 'tesseract')
 ]
 
 block_cipher = None
@@ -13,7 +23,7 @@ block_cipher = None
 
 a = Analysis(['price_overlay.py'],
              pathex=[],
-             binaries=[],
+             binaries=added_binaries,
              datas=added_files,
              hiddenimports=[],
              hookspath=[],

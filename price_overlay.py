@@ -24,8 +24,8 @@ def resource_path(relative_path):
 cleaner = re.compile('<.*?>')
 
 # os.putenv("TESSDATA_PREFIX", 'tesseract\\tessdata')
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract'
-# pytesseract.pytesseract.tesseract_cmd = resource_path('tesseract\\tesseract5.exe')
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract'
+pytesseract.pytesseract.tesseract_cmd = resource_path('tesseract\\tesseract.exe')
 
 details = overlay_settings_nw.detail_overlay()
 app_timer = Timer('app timer')
