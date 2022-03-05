@@ -14,21 +14,19 @@ This add-on reads real time prices from https://nwmarketprices.com and displays 
 
 
 ## Installation instructions:
-1. Download Tesseract https://github.com/CommanderCashMoney/price_overlay/blob/master/final/tesseract5.exe
-2. Install at C:\Program Files (x86)\Tesseract-OCR\tesseract and use all the default options. I've tried bundling tesseract into the install with vcpkg and pyinstall, but I'm having issues, if you can help head over to the [discord](https://discord.gg/fAaezEcH) and hit me up.
-3. Download the overlay https://github.com/CommanderCashMoney/price_overlay/blob/master/dist/New%20World%20Pricing%20Overlay.msi
-4. You will get a warning about it being from an "Unknown Publisher", you click the "More Info" link to be able to run it. If this makes you uncomfortable, you can copy the code and run it directly or package it up yourself.
-5. Run the New World Pricing Overlay.msi, and go through the installation process.
-6. It should add a shortcut to your programs called New World Price Overlay.
+1. Download the overlay https://github.com/CommanderCashMoney/price_overlay/blob/master/dist/New%20World%20Pricing%20Overlay.msi
+2. You may get a warning about it being from an "Unknown Publisher", you click the "More Info" link to be able to run it. If this makes you uncomfortable, you can copy the code and run it directly or package it up yourself.
+3. Run the New World Pricing Overlay.msi, and go through the installation process.
+4. It should add a shortcut to your programs called New World Price Overlay.
 
 ![](readme_images/installed_shortcut.png)
 
-7. Click that to run, it takes a few seconds then you will see a command window open. Be patient, it takes a few seconds.
-8. Once you see the window, press F6 and wait till you see this:
+5. Click that to run, it takes a few seconds then you will see a command window open. Be patient, it takes a few seconds.
+6. Once you see the window, press F6 and wait till you see this:
 
 ![](readme_images/cmd_window_1.png)
 
-10. Price overlay is now active and when it sees an inventory item should try to read the name and look up the price
+7. Price overlay is now active and when it sees an inventory item should try to read the name and look up the price
 
 ### Usage:
 
