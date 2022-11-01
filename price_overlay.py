@@ -16,7 +16,25 @@ import pyperclip
 import ctypes
 import sys, os
 
-server_id = input('Give us your server ID: \n')
+def serverPicker():
+    global server_id
+    serverlist = getServerList()
+    print('Pick a server from the list below: \n')
+    #print(serverlist)
+    for key in serverlist:
+        print('{}: {}'.format(serverlist[key]['name'], key))
+
+    server_id = input('Give us your server ID: \n')
+    os.system('clear')
+
+def getServerList():
+    url = 'https://nwmarketprices.com/api/servers/'
+    header = {"X-Requested-With": "XMLHttpRequest"}
+    r = requests.get(url=url, headers=header)
+    print( r.json())
+    return r.json()
+
+serverPicker()
 
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
@@ -90,8 +108,7 @@ def get_price_from_web(name_id):
     params = {'cn_id': name_id}
     header = {"X-Requested-With": "XMLHttpRequest"}
     r = requests.get(url=url, params=params, headers=header)
-    data = r.json()
-    return data
+    return r.json()
 
 
 def get_name_ids():
@@ -134,6 +151,7 @@ def main():
     details.hide()
     last_item_checked = None
     names = get_name_ids()
+    print('Overlay Ready (press F6 to toggle)')
     while True:
         keys = key_check()
         if keys:
