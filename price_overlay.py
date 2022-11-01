@@ -16,6 +16,8 @@ import pyperclip
 import ctypes
 import sys, os
 
+server_id = input('Give us your server ID: \n')
+
 def resource_path(relative_path):
     """ Get absolute path to resource, works for dev and for PyInstaller """
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
@@ -82,9 +84,9 @@ def process_image(img):
 
 
 def get_price_from_web(name_id):
-
+    global server_id
     # name_id = 1152
-    url = 'https://nwmarketprices.com/'
+    url = 'https://nwmarketprices.com/0/'+ server_id +'/'
     params = {'cn_id': name_id}
     header = {"X-Requested-With": "XMLHttpRequest"}
     r = requests.get(url=url, params=params, headers=header)
@@ -93,20 +95,15 @@ def get_price_from_web(name_id):
 
 
 def get_name_ids():
-    url = 'https://nwmarketprices.com/cn'
+    url = 'https://nwmarketprices.com/api/confirmed_names/'
 
     header = {"X-Requested-With": "XMLHttpRequest"}
     r = requests.get(url=url, headers=header)
-    data = r.json()
-    data_str = data['cn']
-    data_list = json.loads(data_str)
-
-    names = {sub[0]: sub[1] for sub in data_list}
-    return names
+    return r.json()
 
 def lookup_nameid(item_name, names):
     if item_name in names:
-        name_id = names[item_name]
+        name_id = names[item_name]["name_id"]
     else:
         name_id = None
     return name_id
