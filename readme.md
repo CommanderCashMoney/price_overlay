@@ -1,5 +1,7 @@
 # New World Price Overlay
 
+:no_entry: [DEPRECATED] Active at https://github.com/josdemmers/NewWorldCompanion
+
 ### Overview:
 This add-on reads real time prices from https://nwmarketprices.com and displays an overlay in-game. It's using OpenCV and Tesseract to read the item name. I currently only have data for the Kshira Sagara server, but will be looking to expand to other servers soon.
 
